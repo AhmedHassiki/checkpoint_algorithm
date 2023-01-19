@@ -1,0 +1,36 @@
+ALGORITHM iterative_for
+VAR
+lengthSent, numWords, numVowels, i: INTEGER :=0;
+character : CHAR ;
+
+BEGIN
+
+WHILE (character[i] != ".") DO
+    lengthSent:= lengthSent + 1;
+    IF (character[i]="a" or character[i]="e" or character[i]="i" or character[i]="u" or character[i]="o") THEN
+        numVowels:= numVowels + 1; 
+    END_IF
+
+        IF (character=" ") THEN
+            numWords:= numWords + 1;
+        END_IF
+    i++
+END_WHILE
+write("The length of the sentence is : ",lengthSent);
+write("The number of Vowels is : ",numVowels);
+write("The number of Words is",numWords);
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
